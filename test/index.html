@@ -1,0 +1,32 @@
+<!doctype html>
+<html>
+<head>
+    <script src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
+    <script src="../src/meatwad.js"></script>
+    <style>
+	input {
+	    width: 0px;
+	    padding: 0px;
+	    -webkit-transition: all 0.5s;
+	    -moz-transition: all 0.5s;
+	    transition: all 0.5s;
+	}
+	input.open {
+	    width: 200px;
+	}
+    </style>
+</head>
+<body>
+    <div>
+	<form class="wad">
+	    <input type="text">
+	    <button class="submit" type="submit">Submit</button>
+	</form>
+    </div>
+    <script>
+	$(function() {
+	    $('.wad').meatwad();
+	});
+    </script>
+</body>
+</html>
